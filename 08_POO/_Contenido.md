@@ -1,4 +1,4 @@
-# 05. Control de Flujo.
+# 08. Programación Orientada a Objetos.
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/08_POO***.
