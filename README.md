@@ -22,8 +22,14 @@ for, while y do-while. Abre el archivo [Contenido](./05_Bucles/_Contenido.md)
 
 ## 06. Arrays.
 
+Array, Arrays bidimensionales, forEach. Abre el archivo [Contenido](./06_Arrays/_Contenido.md)
+
 ## 07. Funciones.
+
+Funciones, paquetes y paso de parámetros por valor y referencia. Abre el archivo [Contenido](./07_Funciones/_Contenido.md)
+
 ## 08. Programación Orientada a Objetos.
+
 ## 09. Colecciones y diccionarios.
 ## 10. Operaciones con Ficheros.
 ## 11. Control de excepciones.

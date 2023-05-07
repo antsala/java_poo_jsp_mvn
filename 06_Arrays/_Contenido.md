@@ -49,11 +49,54 @@ code ./Array04.java
 Compilamos el programa y observamos la salida en la terminal.
 
 
+Ahora in array de números de tipo ***double***.
+
+Abrimos con VSC el archivo ***Array05.java*** y lo estudiamos.
+
+```
+code ./Array05.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
+
+
+Un array ***bidimensional**+ utiliza dos índices para localizar cada elemento. Podemos ver este tipo de dato como un array que, a su vez, contiene otros arrays. También se puede ver como una cuadrícula en la que los datos quedan distribuidos en filas y columnas.
+
+Abrimos con VSC el archivo ***ArrayBi01.java*** y lo estudiamos.
+
+```
+code ./ArrayBi01.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
+
+Los valores del array bidimensional se pueden proporcionar en la misma línea de la definición.
+
+Abrimos con VSC el archivo ***ArrayBi02.java*** y lo estudiamos.
+
+```
+code ./ArrayBi02.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
+
+Al trabajar con arrays es muy frecuente cometer errores utilizando los índices. El error más típico consiste en intentar acceder a un elemento mediante un índice que se sale de los límites y provocará una excepción. Para recorrer un array de un modo más práctico y sencillo, sin que tengamos que preocuparnos de los límites, podemos utilizar el bucle for con el formato ***foreach***. 
+
+De esta forma indicamos simplemente el nombre del array que queremos recorrer y en qué variable se va a ir colocando cada elemento con cada iteración del bucle. No hay que especificar con qué índice comienza y termina el bucle, de eso se encarga Java.
+
+
+Abrimos con VSC el archivo ***ArrayForEach.java*** y lo estudiamos.
+
+```
+code ./ArrayForEach.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
 
 
 Vamos al siguiente capítulo.
 ```
-cd ../07
+cd ../07_Funciones
 ```
 
 
