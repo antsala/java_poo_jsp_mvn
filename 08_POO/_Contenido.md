@@ -116,7 +116,80 @@ Estudia la siguiente tabla.
 
 ![mi imagen](../img/202308071356.png)
 
+Un atributo ***private*** solamente es accesible desde la misma clase, sin embargo, a un método ***protected*** se podrá acceder desde la misma clase donde esté definido, desde otro fichero dentro del mismo paquete o desde una subclase.
 
+Como regla general, se suelen declarar ***private los atributos o variables de instancia*** y ***public los métodos***.
+
+La ***herencia*** es una de las características más importantes de la POO. Si definimos una serie de atributos y métodos para una clase, al crear una subclase, todos estos atributos y métodos siguen siendo válidos.
+
+Vamos a definir la clase ***Animal***, donde uno de sus métodos es ***duerme***. A continuación podemos crear las clases ***Gato*** y ***Perro*** como subclases de Animal.
+
+De forma automática, se puede utilizar el método ***duerme*** con las instancias de las clases ***Gato*** y ***Perro***
+
+La clase ***Ave*** es subclase de ***Animal*** y la clase ***Pinguino***, a su vez, sería subclase de ***Ave*** y
+por tanto hereda todos sus atributos y métodos.
+
+Una clase ***abstracta*** es aquella que ***no va a tener instancias*** de forma directa, aunque sí habrá instancias de las subclases. Por ejemplo, si se define la clase ***Animal*** como abstracta, ***no se podrán crear objetos*** de la clase Animal, es decir, no se podrá hacer ***Animal mascota = new Animal()***, pero sí se podrán crear instancias de la clase ***Gato***, ***Ave*** o ***Pinguino*** que son subclases de ***Animal***.
+
+Empezamos a crear las clases.
+
+Antes de ello vamos a definir una enumeración o tipo enumerado. De esta forma un atributo solo podrá tener uno de los posibles valores que se dan como opción. Los valores que se especifican en el tipo enumerado se suelen escribir con todas
+las letras en mayúscula.
+
+Abrimos con VSC el archivo ***Sexo.java*** y lo estudiamos.
+
+```
+code ./ejemplo_05/Sexo.java
+```
+
+Creamos la clase ***Animal***.
+
+Abrimos con VSC el archivo ***Animal.java*** y lo estudiamos.
+
+```
+code ./ejemplo_05/Animal.java
+```
+
+Ahora creamos la clase ***Gato*** que va a extender a ***Animal***.
+
+Abrimos con VSC el archivo ***Gato.java*** y lo estudiamos.
+
+```
+code ./ejemplo_05/Gato.java
+```
+
+Creamos clase ***Ave***, que especializa a ***Animal***.
+
+Abrimos con VSC el archivo ***Ave.java*** y lo estudiamos.
+
+```
+code ./ejemplo_05/Ave.java
+```
+
+Un método se puede ***redefinir*** (volver a definir con el mismo nombre) en una ***subclase***. Por ejemplo, el método ***vuela*** que está definido en la clase ***Ave*** se vuelve a definir en la clase ***Pinguino***. En estos casos, indicaremos nuestra intención de sobreescribir un método mediante la etiqueta ***@Override***.
+
+Si no escribimos esta etiqueta, la sobreescritura del método se realizará de todas formas ya que ***@Override*** indica simplemente una intención. Ahora imagina que quieres sobreescribir el método ***come*** de Animal declarando un ***come*** específico para los gatos en la clase ***Gato***. Si escribes @Override y luego te equivocas en el nombre del método y escribes ***comer***, entonces el compilador te mostrará un warning y te darás cuenta del error. Usa siempre ***@Override***.
+
+Vamos a crear la clase ***Pinguino***.
+
+Abrimos con VSC el archivo ***Pinguino.java*** y lo estudiamos.
+
+```
+code ./ejemplo_05/Pinguino.java
+```
+
+Es el momento de probar todas estas clases.
+
+Abrimos con VSC el archivo ***PruebaAnimal.java*** y lo estudiamos.
+
+```
+code ./PruebaAnimal.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
+
+
+Voy por página 181
 
 
 [Vamos al siguiente capítulo](../09)
