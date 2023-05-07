@@ -13,6 +13,11 @@ Ahora entra en el directorio 01.
 cd 01_HolaMundo
 ```
 
+Entramos en el repositorio local.
+```
+cd java_poo_jsp_mvn
+```
+
 Abrimos con VSC el archivo ***HolaMundo.java***.
 ```
 code ./HolaMundo.java
