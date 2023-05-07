@@ -87,9 +87,6 @@ code ./PruebaParametrosArray.java
 Compilamos el programa y observamos la salida en la terminal.
 
 
-Vamos al siguiente capítulo.
-```
-cd ../08_POO
-```
+[Vamos al siguiente capítulo](../08_POO/_Contenido.md)
 
 
