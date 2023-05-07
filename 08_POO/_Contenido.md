@@ -189,8 +189,101 @@ code ./PruebaAnimal.java
 Compilamos el programa y observamos la salida en la terminal.
 
 
-Voy por página 181
+Hasta el momento hemos definido ***atributos de instancia*** como raza, sexo o color y ***métodos de instancia*** como maulla, come o vuela. De tal modo que si en el programa se crean 20 gatos, cada uno de ellos tiene su propia raza y puede haber potencialmente
+20 razas diferentes. También podría aplicar el método ***maulla*** a todos y cada uno de esos 20 gatos.
+
+No obstante, en determinadas ocasiones, nos puede interesar tener ***atributos de clase*** (variables de clase) y ***métodos de clase***. Cuando se define una variable de clase solo existe ***una copia del atributo para toda la clase*** y no una para cada objeto. Esto es útil cuando se quiere llevar la cuenta global de algún parámetro. 
+
+Los ***métodos de clase*** se aplican a la clase y no a instancias concretas. A continuación se muestra un ejemplo que contiene la ***variable de clase kilometrajeTotal***. Si bien cada coche tiene un ***atributo kilometraje*** donde se van acumulando los
+kilómetros que va recorriendo, en la variable de clase kilometrajeTotal se lleva la cuenta de los kilómetros que han recorrido todos los coches que se han creado.
+
+También se crea un método de clase llamado ***getKilometrajeTotal*** que simplemente es un getter para la variable de clase kilometrajeTotal.
 
 
-[Vamos al siguiente capítulo](../09)
+Abrimos con VSC el archivo ***Coche.java*** y lo estudiamos.
+
+```
+code ./ejemplo_06/Coche.java
+```
+
+Abrimos con VSC el archivo ***PruebaCoche.java*** y lo estudiamos.
+
+```
+code ./PruebaCoche.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
+
+
+Una ***interfaz*** contiene únicamente la cabecera de una serie de métodos (opcionalmente también puede contener constantes). Por tanto se encarga de especificar un comportamiento que luego tendrá que ser implementado. 
+
+La interfaz no especifica el "cómo" ya que no contiene el cuerpo de los métodos, solo el "qué".
+
+Una interfaz puede ser útil en determinadas circunstancias. En principio, separa la ***definición*** de la ***implementación***.
+
+Tendremos entonces al menos dos ficheros, ***la interfaz*** y la ***clase que implementa esa interfaz***. 
+
+Se puede dar el caso que un programador escriba la interfaz y luego se la pase a otro programador para que sea éste último quien la implemente (muy común).
+
+Hay que destacar que cada interfaz puede tener varias implementaciones asociadas. 
+
+En el ejemplo empezamos de nuevo y solo definimos la clase ***Animal*** y la enumeración ***Sexo***, cuyos archivos se han vuelto a copiar a la carpeta "ejemplo_07".
+
+Definimos la interfaz Mascota.
+
+Abrimos con VSC el archivo ***Mascota.java*** y lo estudiamos.
+
+```
+code ./ejemplo_07/Mascota.java
+```
+
+Ahora volvemos a crear la clase ***Gato***, pero esta vez indicamos que tiene que implementar los métodos que exige la interfaz ***Mascota***.
+
+Abrimos con VSC el archivo ***Gato.java*** y lo estudiamos.
+
+```
+code ./ejemplo_07/Gato.java
+```
+
+Vamos a crear otra clase que también implementa la inferfaz ***Mascota***. La clase ***Perro***.
+
+Abrimos con VSC el archivo ***Perro.java*** y lo estudiamos.
+
+```
+code ./ejemplo_07/Perro.java
+```
+
+Probamos la clase.
+
+Abrimos con VSC el archivo ***PruebaMascota.java*** y lo estudiamos.
+
+```
+code ./PruebaMascota.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
+
+
+Del mismo modo que se pueden crear arrays de números enteros, decimales o cadenas de caracteres, también es posible crear arrays de objetos.
+
+Vamos a definir la clase ***Alumno*** para luego crear un array de objetos de esta clase.
+
+Abrimos con VSC el archivo ***Alumno.java*** y lo estudiamos.
+
+```
+code ./ejemplo_08/Alumno.java
+```
+
+Vamos a hacer una prueba instanciando un array con 5 objetos de tipo Alumno.
+
+Abrimos con VSC el archivo ***PruebaArrayAlumno.java*** y lo estudiamos.
+
+```
+code ./PruebaArrayAlumno.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
+
+
+[Vamos al siguiente capítulo](../09_ColeccionesDiccionarios/_Contenido.md)
 
