@@ -1,4 +1,4 @@
-# 06. Control de Flujo.
+# 06. Arrays.
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/06_Arrays***.
