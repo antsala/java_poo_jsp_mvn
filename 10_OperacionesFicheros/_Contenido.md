@@ -1,4 +1,4 @@
-# 09. Colecciones y Diccionarios.
+# 10. Operaciones con ficheros.
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/10_OperacionesFicheros***.
 
@@ -40,6 +40,41 @@ code ./PruebaArchivo03.java
 ```
 
 Compilamos el programa y observamos la salida en la terminal.
+
+
+El paso de argumentos por línea de comandos es necesario si arrancamos la aplicación desde la terminal.
+
+El siguiente ejemplo lee los parámetros. Posteriormente los podríamos procesar mediante un ***switch***.
+
+Abrimos con VSC el archivo ***PruebaParametros.java*** y lo estudiamos.
+
+```
+code ./PruebaParametros.java
+```
+
+Compilamos el programa, tendrás que poner los parámetros desde la terminal. 
+
+Cuando se procesa un archivo de texto, los pasos a seguir son los siguientes:
+
+1. Leer una línea del fichero origen mientras quedan líneas por leer.
+2. Modificar la línea (normalmente utilizando los métodos que ofrece la clase String).
+3. Grabar la línea modificada en el fichero destino.
+4. Volver al paso 1.
+
+Es recomendable usar la clase String para procesar el archivo, ya que sus métodos hacen todo lo que necesitamos. Aquí tienes su documentación: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+
+El siguiente ejemplo abre procesa un archivo y sustituye los tabuladores por 2 espacios en blanco.
+
+
+Abrimos con VSC el archivo ***PruebaString.java*** y lo estudiamos.
+
+```
+code ./PruebaString.java
+```
+
+Compilamos el programa, pasamos el archivo original en la línea de comando de la terminal.
+
+
 
 
 [Vamos al siguiente capítulo](../11)
