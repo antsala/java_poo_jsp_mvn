@@ -94,9 +94,5 @@ code ./ArrayForEach.java
 Compilamos el programa y observamos la salida en la terminal.
 
 
-Vamos al siguiente capítulo.
-```
-cd ../07_Funciones
-```
-
+[Vamos al siguiente capítulo](../07_Funciones/_Contenido.md)
 

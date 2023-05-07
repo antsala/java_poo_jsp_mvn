@@ -2,7 +2,6 @@
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/08_POO***.
-```
 
 La ***programación orientada a objetos*** es un paradigma de programación que se basa, como su nombre indica, en la utilización de objetos. Estos objetos también se suelen llamar ***instancias***.
 
@@ -120,9 +119,5 @@ Estudia la siguiente tabla.
 
 
 
-Vamos al siguiente capítulo.
-```
-cd ../09
-```
-
+[Vamos al siguiente capítulo](../09)
 

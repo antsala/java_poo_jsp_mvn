@@ -94,10 +94,5 @@ code ./ConversionDeTipos.java
 Compilamos el programa y observamos la salida en la terminal.
 
 
-
-Vamos al siguiente capítulo.
-```
-cd ../03_EntradaDeDatos
-```
-
+[Vamos al siguiente capítulo](../03_EntradaDeDatos/_Contenido.md)
 

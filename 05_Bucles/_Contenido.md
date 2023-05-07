@@ -41,9 +41,5 @@ Compilamos el programa y observamos la salida en la terminal.
 
 
 
-Vamos al siguiente capítulo.
-```
-cd ../06
-```
-
+[Vamos al siguiente capítulo](../06_Arrays/_Contenido.md)
 

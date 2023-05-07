@@ -30,10 +30,5 @@ Compilamos el programa y observamos la salida en la terminal.
 Aquí tienes más información para la conversión de cadenas a números y viceversa: https://docs.oracle.com/javase/tutorial/java/data/converting.html
 
 
-
-Vamos al siguiente capítulo.
-```
-cd ../04_ControlDeFlujo
-```
-
+[Vamos al siguiente capítulo](../04_ControlDeFlujo/_Contenido.md)
 

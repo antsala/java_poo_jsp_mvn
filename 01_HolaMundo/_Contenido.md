@@ -36,9 +36,6 @@ code ./SalidaFormateada02.java
 
 Compilamos el programa y observamos la salida en la terminal.
 
-Vamos al siguiente capítulo.
-```
-cd ../02_Variables
-```
+[Vamos al siguiente capítulo](../02_Variables/_Contenido.md)
 
 
