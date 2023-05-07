@@ -34,10 +34,11 @@ Cerramos la ventana de edición y procedemos a abrir el siguiente ejemplo y estu
 code ./SalidaFormateada02.java
 ```
 
-
-
 Compilamos el programa y observamos la salida en la terminal.
 
-
+Vamos al siguiente capítulo.
+```
+cd ../02_Variables
+```
 
 
