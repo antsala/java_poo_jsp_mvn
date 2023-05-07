@@ -2,7 +2,7 @@
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/03_EntradaDeDatos***.
-```
+
 
 Para recoger datos por teclado usamos ***System.console().readLine()***. Cuando llegamos a esta sentencia, el programa se detiene y espera que el usuario introduzca información mediante el teclado. La introducción de datos termina con la pulsación de la tecla ***INTRO***. Una vez que el usuario presiona INTRO, todo lo que se ha tecleado se almacena en una variable.
 

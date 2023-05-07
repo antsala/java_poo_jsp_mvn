@@ -2,7 +2,7 @@
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/06_Arrays***.
-```
+
 
 Un ***array*** es un tipo de dato capaz de almacenar múltiples valores. Se utiliza para agrupar datos muy parecidos.
 

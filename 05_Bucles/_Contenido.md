@@ -2,7 +2,7 @@
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/05_Bucles***.
-```
+
 
 Los ***bucles*** se utilizan para repetir un conjunto de sentencias. Normalmente existe una condición de salida, que hace que el flujo del programa abandone el bucle y continúe justo en la siguiente sentencia. Si no existe condición de salida o si esta condición no se cumple nunca, se produciría lo que se llama un bucle infinito y el programa no terminaría nunca.
 

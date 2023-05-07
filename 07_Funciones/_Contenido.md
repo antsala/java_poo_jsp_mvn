@@ -2,7 +2,7 @@
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/07_Funciones***.
-```
+
 
 Una función es un trozo de código que realiza una tarea muy concreta y que se puede
 incluir en cualquier programa cuando hace falta resolver esa tarea. Opcionalmente,

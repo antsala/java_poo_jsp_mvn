@@ -2,7 +2,7 @@
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/04_ControlDeFlujo***.
-```
+
 
 La sentencia ***if*** permite la ejecución de una serie de instrucciones en función del resultado de una expresión lógica. El resultado de evaluar una expresión lógica es siempre verdadero (true) o falso (false). 
 
