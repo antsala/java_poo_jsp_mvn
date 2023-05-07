@@ -18,7 +18,31 @@ Entramos en la primera carpeta del repositorio local.
 cd java_poo_jsp_mvn/01_HolaMundo
 ```
 
-Abrimos con VSC el archivo ***HolaMundo.java***.
+Abrimos con VSC el archivo ***HolaMundo.java*** y lo estudiamos.
 ```
 code ./HolaMundo.java
 ```
+
+Compilamos el programa y observamos la salida en la terminal.
+
+Cerramos la ventana de edición y procedemos a abrir el siguiente ejemplo y estudiamos su código.
+```
+code ./SalidaFormateada01.java
+```
+
+
+
+Compilamos el programa y observamos la salida en la terminal.
+
+Cerramos la ventana de edición y procedemos a abrir el siguiente ejemplo y estudiamos su código.
+```
+code ./SalidaFormateada02.java
+```
+
+
+
+Compilamos el programa y observamos la salida en la terminal.
+
+
+
+
