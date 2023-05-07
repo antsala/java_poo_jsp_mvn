@@ -2,7 +2,7 @@
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/11_Excepciones***.
 
-bla, bla, bla.
+bla, bla, bla. página 304.
 
 Abrimos con VSC el archivo ***PruebaArchivo01.java*** y lo estudiamos.
 

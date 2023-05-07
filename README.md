@@ -38,6 +38,9 @@ ArrayList, HashMap. Abre el archivo [Contenido](./09_ColeccionesDiccionarios/_Co
 
 ## 10. Operaciones con Ficheros.
 
+Abrir archivos, leer y escribir. Argumentos de línea de comandos. Abre el archivo [Contenido](./10_OperacionesFicheros/_Contenido.md)
+
 ## 11. Control de excepciones.
+
 ## 12. Aplicaciones web en Java (JSP)
 ## 13. Acceso a bases de datos (JDBC)
