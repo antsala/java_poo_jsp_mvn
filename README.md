@@ -30,12 +30,14 @@ Funciones, paquetes y paso de parámetros por valor y referencia. Abre el archiv
 
 ## 08. Programación Orientada a Objetos.
 
-Clases, herencia, interface. Abre el archivo [Contenido](./08_POO/_Contenido.md)
+Clases, herencia, interfaz. Abre el archivo [Contenido](./08_POO/_Contenido.md)
 
 ## 09. Colecciones y diccionarios.
 
+ArrayList, HashMap. Abre el archivo [Contenido](./09_ColeccionesDiccionarios/_Contenido.md)
 
 ## 10. Operaciones con Ficheros.
+
 ## 11. Control de excepciones.
 ## 12. Aplicaciones web en Java (JSP)
 ## 13. Acceso a bases de datos (JDBC)
