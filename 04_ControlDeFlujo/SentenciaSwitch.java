@@ -41,7 +41,7 @@ public class SentenciaSwitch {
                 nombreDelMes = "diciembre";
                 break;
             default:
-                nombreDelMes = "no existe ese mes";
+                nombreDelMes = "no existe ese mes"; // No es necesario poner "break" aquí.
         }
         System.out.println("Mes " + mes + ": " + nombreDelMes);
     }

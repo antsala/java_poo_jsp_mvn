@@ -14,9 +14,14 @@ Entrada de datos desde consola. Abre el archivo [Contenido](./03_EntradaDeDatos/
 
 ## 04. Control de flujo.
 
+if y switch. Abre el archivo [Contenido](./04_ControlDeFlujo/_Contenido.md)
 
 ## 05. Bucles.
+
+for, while y do-while. Abre el archivo [Contenido](./05_Bucles/_Contenido.md)
+
 ## 06. Arrays.
+
 ## 07. Funciones.
 ## 08. Programación Orientada a Objetos.
 ## 09. Colecciones y diccionarios.

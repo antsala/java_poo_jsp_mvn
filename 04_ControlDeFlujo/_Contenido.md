@@ -61,11 +61,20 @@ code ./SentenciaSwitch.java
 Compilamos el programa y observamos la salida en la terminal.
 
 
+***switch*** es muy útil para crear menús.
+
+Abrimos con VSC el archivo ***MenuConSwitch.java*** y lo estudiamos.
+
+```
+code ./MenuConSwitch.java
+```
+
+Compilamos el programa y observamos la salida en la terminal.
 
 
 Vamos al siguiente capítulo.
 ```
-cd ../04_ControlDeFlujo
+cd ../05_Bucles
 ```
 
 
