@@ -1,4 +1,4 @@
-# 0$. Control de Flujo.
+# 04. Control de Flujo.
 
 
 Asegurarse que se está en el directorio ***java_poo_jsp_mvn/04_ControlDeFlujo***.
@@ -72,9 +72,5 @@ code ./MenuConSwitch.java
 Compilamos el programa y observamos la salida en la terminal.
 
 
-Vamos al siguiente capítulo.
-```
-cd ../05_Bucles
-```
-
+[Vamos al siguiente capítulo](../05_Bucles/_Contenido.md)
 
