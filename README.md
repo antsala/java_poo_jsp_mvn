@@ -3,7 +3,10 @@
 ## 01. Hola Mundo.
 
 Mi primer programa Java. Abre el archivo [Contenido](./01_HolaMundo/_Contenido.md)
+
 ## 02. Variables.
+
+Todo lo que tienes que saber sobre las variables en Java. Abre el archivo [Contenido](./02_Variables/_Contenido.md)
 ## 03. Entrada de datos.
 ## 04. Control de flujo.
 ## 05. Bucles.
