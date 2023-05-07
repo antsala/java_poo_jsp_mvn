@@ -2,7 +2,7 @@
 
 ## 01. Hola Mundo.
 
-Mi primer programa Java. Abre el archivo [Contenido](./01.%20Hola%20Mundo/_Contenido.md)
+Mi primer programa Java. Abre el archivo [Contenido](./01_HolaMundo/_Contenido.md)
 ## 02. Variables.
 ## 03. Entrada de datos.
 ## 04. Control de flujo.
