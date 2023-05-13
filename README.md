@@ -42,5 +42,8 @@ Abrir archivos, leer y escribir. Argumentos de línea de comandos. Abre el archi
 
 ## 11. Control de excepciones.
 
+Bloque try - catch - finally. Uso de varios bloques catch. Crear excepciones propias. Abre el archivo [Contenido](./11_Excepciones/_Contenido.md)
+
 ## 12. Aplicaciones web en Java (JSP)
+
 ## 13. Acceso a bases de datos (JDBC)
