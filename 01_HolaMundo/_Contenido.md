@@ -8,10 +8,7 @@ Lo primero que debes hacer es clonar este repositorio para tener disponibles los
 git clone https://github.com/antsala/java_poo_jsp_mvn.git
 ```
 
-Entramos en la primera carpeta del repositorio local.
-```
-cd java_poo_jsp_mvn/01_HolaMundo
-```
+Asegurarse que se está en el directorio ***java_poo_jsp_mvn/01_holaMundo***.
 
 Abrimos con VSC el archivo ***HolaMundo.java*** y lo estudiamos.
 ```
