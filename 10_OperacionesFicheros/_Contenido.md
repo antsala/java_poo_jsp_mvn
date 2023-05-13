@@ -75,7 +75,5 @@ code ./PruebaString.java
 Compilamos el programa, pasamos el archivo original en la línea de comando de la terminal.
 
 
-
-
-[Vamos al siguiente capítulo](../11)
+[Vamos al siguiente capítulo](../11_Excepciones/_Contenido.md)
 

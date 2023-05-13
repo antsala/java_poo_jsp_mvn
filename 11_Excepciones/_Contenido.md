@@ -158,7 +158,5 @@ code ./PruebaExcepcionPropia.java
 Compilamos el programa y observamos la salida en la terminal. Prueba a introducir un valor válido. Luego ejecútalo de nuevo con valores fuera del margen. Verás el control de excepción funcionando.
 
 
-
-
 [Vamos al siguiente capítulo](../12)
 
