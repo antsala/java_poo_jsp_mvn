@@ -103,7 +103,6 @@ Vamos a ver como programar orientado a objetos en JSP.
 
 En las aplicaciones realizadas en JSP se pueden incluir clases definidas por el usuario para posteriormente crear objetos de esas clases. Lo habitual es que el fichero que contiene la definición de la clase se encuentre separado del programa principal.
 
-Aquí tienes el layout de carpetas que usa Maven: https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
 
 (Nota: Si te aparece el error ***Compiler compliance specified is 1.7 but a JRE 17 is used***, hay que "retocar un poco el archivo ***pom.xml***. Editalo y localiza estas líneas:
 
@@ -123,13 +122,25 @@ Debes dejarlo así:
   </properties>
 ```
 
-En el proyecto creamos la clase ***Gato***. Consulta el archivo para ver que hace.
+Aquí tienes el layout de carpetas que usa Maven: https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
 
-Abrimos ***Gato.java***. Observa como los métodos de la clase devuelven string que generan HTML.
+Hay que ser muy estricto a la hora de colocar los archivos con el código fuente de las clases de java. Siempre debes realizarlo así:
+Coloca el paquete (la carpeta) de tus clases en ***./src/main/java*** (si alguna carpeta no existe, créala)
+
+La clase de java debe definir el paquete al que pertenece, siguiendo las buenas prácticas que has aprendido.
+
+En definitiva, la clase ***Gato***, debe estar en la ruta que ves en el siguiente comando que usamos para visualizar el archivo
 
 ```
-code .\java_poo_jsp_mvn\Maven_project_04\poojsp\src\main\webapp\Gato.java
+code .\java_poo_jsp_mvn\Maven_project_04\poojsp\src\main\java\mipaquete\Gato.java
 ```
+
+Abrimos el archivo ***index.jsp***.
+
+```
+code .\java_poo_jsp_mvn\Maven_project_04\poojsp\src\main\webapp\index.jsp
+```
+
 
 
 

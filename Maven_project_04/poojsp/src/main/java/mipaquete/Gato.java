@@ -1,4 +1,4 @@
-package mipaquete;
+package mipaquete; // Recuerda, la clase pertenece a un paquete (buena práctica)
 
 public class Gato {
     private String nombre;
@@ -19,14 +19,17 @@ public class Gato {
 
     @Override
     public String toString() {
-        return "<img src='./img'" + imagen + "' width='80'>Hola, soy " + nombre + "<br>";
+        // En la carpeta 'img' del directorio 'webapp' tenemos las imagenes.
+        return "<img src='./img/" + imagen + "' width='80'>Hola, soy " + nombre + "<br>";
     }
 
     public String maulla() {
-        return "<img src='./img'" + imagen + "' width='80'>Miauuuuuuuu<br>";
+        // En la carpeta 'img' del directorio 'webapp' tenemos las imagenes.
+        return "<img src='./img/" + imagen + "' width='80'>Miauuuuuuuu<br>";
     }
 
     public String come(String comida) {
-        return "<img src='./img'" + imagen + "' width='80'>Estoy comiendo " + comida + "<br>";
+        // En la carpeta 'img' del directorio 'webapp' tenemos las imagenes.
+        return "<img src='./img/" + imagen + "' width='80'>Estoy comiendo " + comida + "<br>";
     }
 }
