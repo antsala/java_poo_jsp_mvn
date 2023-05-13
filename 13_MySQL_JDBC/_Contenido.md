@@ -99,14 +99,3 @@ code ./Maven_project_06/gestordb/src/main/webapp/index.jsp
 ```
 
 Haz el deploy y comprueba que se puede leer de la base de datos.
-
-
-
-
-
-
-
-
-
-[Vamos al siguiente capítulo](../14)
-
