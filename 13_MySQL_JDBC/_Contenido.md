@@ -62,7 +62,49 @@ code ./src/Crear_DB.java
 
 Si lo compilas fallará. Es necesario indicar al compilador de Java dónde puede encontrar el driver JDBC para comunicarse con MySQL. 
 
-Para ello, en el Exploador, localiza la sección ***Java Projects***. 
+Para ello, en el Explorador, localiza la sección ***Java Projects***. Despliega el proyecto y localiza ***Referenced Libraries***. Haz clic en el botón ***+***. Se abrirá un cuadro de diálogo donde deberás buscar el driver del conector JDBC para MySQL que se instaló. Debe estar en la siguiente ruta.
+
+```
+C:\Program Files (x86)\MySQL\Connector J 8.0\mysql-connector-j-8.0.33.jar
+```
+
+Ahora ejecuta el programa y la base de datos se creará. Puedes comprobarlo en MySQL Workbench.
+
+Cerramos el proyecto.
+
+Procedemos a crear un proyecto Maven JSP que interactúe con una base de datos MySQL.
+
+Lo primero que vamos a hacer es crear la base de datos. Para ello, Desde MySQL Workbench, abre el archivo ***importaDB.sql*** y ejecuta el script.
+
+A continuación vamos a abrir el proyecto ***gestordb*** que está en la carpeta ***Maven_project_06***.
+
+Maven permite indicar las dependencias del proyecto en el archivo ***pom.xml***. 
+
+Abre el archivo y localiza las líneas que inyectan la dependencia. No cambies el archivo.
+```
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.24</version>
+    </dependency>
+```
+
+```
+code ./Maven_project_06/gestordb/pom.xml
+```
+
+Edita el archivo ***index.jsp***, estúdialo y actualiza el valor del password del root. 
+```
+code ./Maven_project_06/gestordb/src/main/webapp/index.jsp
+```
+
+Haz el deploy y comprueba que se puede leer de la base de datos.
+
+
+
+
+
+
 
 
 
