@@ -16,14 +16,14 @@ Vamos a crear un nuevo proyecto JSP. Para ello, en VSC, mostramos la paleta de c
 
 Ponemos el ratón en ***Maven*** y hacemos clic en el botón ***+*** (Create Maven Project). Selecionamos el arquetipo ***maven-archetype-webapp***
 
-a la pregunta de versión, respondemos con la última (v1.4)
+A la pregunta de versión, respondemos con la última (v1.4)
 
 Pulsamos enter cuando nos pregunte que introduzcamos la identificación del proyecto. Aceptamos ***com.example***.
 
 Cuando pregunte por el identificador de artefacto del proyecto, nos propondrá  ***demo***, lo cambiamos por ***holamundo*** (solo admite minúsculas) y pulsamos ***Intro***.
 
-Se abrirá un cuadro de diálogo en el que debemos elegir la carpeta que almacenará nuestro proyecto. Te recomiendo crear una como ***Mis_proyectos_MVN*** o similar. Seleccionala.
-(Nota: El repositorio tiene todos los ejercicios en la carpeta ***Maven_Projects***, por si necesitas consultar algo)
+Se abrirá un cuadro de diálogo en el que debemos elegir la carpeta que almacenará nuestro proyecto. Para cada proyecto que hagas debes proporcionar una carpeta.  Crea una nueva y seleccionala.
+(Nota: El repositorio tiene todos los ejercicios en las carpetas ***Maven_Project_XX***, por si necesitas consultar algo)
 
 Maven procederá a crear la estructura de directorios del proyecto. Es muy importante que observes que en la terminal te está pidiendo que introduzcas el valor de la propiedad ***version***. Pulsa ***Intro*** en la terminal para aceptar el valor propuesto (1.0-SNAPSHOT)
 
@@ -56,21 +56,81 @@ Cuando desplegamos la aplicación sucede lo siguiente:
 3. Por último, todo el código (ya solo queda HTML) se envía al navegador que es el que muestra la página. Recuerda que el navegador no entiende Java (entiende Javascript que es otro lenguaje diferente) y es imprescindible que todo el código Java haya sido traducido previamente.
 
 A continuación vamos a desarrollar un ejemplo que mezcla Java y HTML.
+(NOTA: VSC no tiene ninguna extensión oficial que reconozca la sintaxis JSP. Para ello puedes usar otro editos como Eclipse, o instalar el plugin ***Java Server Pages*** que aunque está sin mantenimiento, puede hacer su trabajo bien)
 
+Siguiendo las intrucciones previas, crea otro poyecto Maven en una carpeta y llámalo ***ejemplo***. Cuando se haya creado la estructura de carpetas Maven, selecciona el archivo ***index.jsp*** de la carpeta ***src*** , que volverá a tener una página jsp básica. Vamos a cambiar su contenido por un nuevo código.
 
-
-
-
-
-
-
-Abrimos con VSC el archivo ***EjemploExcepciones01.java*** y lo estudiamos.
+Abrimos ***Prueba01.jsp***.
 
 ```
-code ./EjemploExcepciones.java
+code ./Prueba01.jsp
 ```
 
-Compilamos el programa y observamos la salida en la terminal. Intenta calcular la media de un número y un texto, se producirá una excepción.
+Copia todo el texto y pégalo en el archivo ***index.jsp***, descartando el contenido que éste tuviera. A continuación estúdialo, compila, empaqueta y despliega tu aplicación como ya has aprendido.
+
+Vamos a ver otro ejemplo en JSP.
+
+Abrimos ***Prueba02.jsp***.
+
+```
+code ./Prueba02.jsp
+```
+
+Copia todo el texto y pégalo en el archivo ***index.jsp***, descartando el contenido que éste tuviera. A continuación estúdialo, compila, empaqueta y despliega tu aplicación.
+
+
+Es el momento de usar un formulario que envíe datos al servidor, para que este los procese con Java. Para ello vamos a usar un proyecto presente en el respositorio. 
+
+En el explorador, localiza la carpeta ***Maven_project_03\recogidadatosformulario***. En la carpeta ***src*** verás dos archivos: ***index.jsp*** que presenta un formulario simple, y ***procesa.jsp*** que es llamado por el submit del formulario.
+
+Vamos a abrirlos y estudiarlos.
+
+Abrimos ***index.jsp***.
+
+```
+code .\java_poo_jsp_mvn\Maven_project_03\recogidadatosformulario\src\main\webapp\index.jsp
+```
+
+Abrimos ***procesa.jsp***.
+
+```
+code .\java_poo_jsp_mvn\Maven_project_03\recogidadatosformulario\src\main\webapp\procesa.jsp
+```
+
+Despliega el proyecto y comprueba que funciona. El proceso en el servidor de los datos enviados por el formulario es algo que siempre se realizan en las aplicaciones web. 
+
+Vamos a ver como programar orientado a objetos en JSP.
+
+En las aplicaciones realizadas en JSP se pueden incluir clases definidas por el usuario para posteriormente crear objetos de esas clases. Lo habitual es que el fichero que contiene la definición de la clase se encuentre separado del programa principal.
+
+Aquí tienes el layout de carpetas que usa Maven: https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+
+(Nota: Si te aparece el error ***Compiler compliance specified is 1.7 but a JRE 17 is used***, hay que "retocar un poco el archivo ***pom.xml***. Editalo y localiza estas líneas:
+
+```
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+```
+
+Debes dejarlo así:
+```
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+  </properties>
+```
+
+En el proyecto creamos la clase ***Gato***. Consulta el archivo para ver que hace.
+
+Abrimos ***Gato.java***. Observa como los métodos de la clase devuelven string que generan HTML.
+
+```
+code .\java_poo_jsp_mvn\Maven_project_04\poojsp\src\main\webapp\Gato.java
+```
+
 
 
 
