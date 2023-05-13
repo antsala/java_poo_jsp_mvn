@@ -1,6 +1,5 @@
 # 10. Operaciones con ficheros.
 
-Asegurarse que se está en el directorio ***java_poo_jsp_mvn/10_OperacionesFicheros***.
 
 Para trabajar con ficheros se importarán las clases necesarias mediante imports.
 
@@ -9,11 +8,7 @@ no tenemos permiso para acceder a él, etc.
 
 Ahora vamos a ver la forma de abrir un archivo.
 
-Abrimos con VSC el archivo ***PruebaArchivo01.java*** y lo estudiamos.
-
-```
-code ./PruebaArchivo01.java
-```
+Abrimos con VSC el archivo ***10_OperacionesFicheros/PruebaArchivo01.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
@@ -23,34 +18,21 @@ Es importante ejecutar ***close()*** después de realizar la escritura; de esta 
 
 El siguiente programa crea un fichero de texto y almacena tres palabras.
 
-Abrimos con VSC el archivo ***PruebaArchivo02.java*** y lo estudiamos.
-
-```
-code ./PruebaArchivo02.java
-```
+Abrimos con VSC el archivo ***10_OperacionesFicheros/PruebaArchivo02.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
 En este caso vemos como hacer lecturas y escrituras combinadas. Para ello debemos crear varios manejadores.
 
-Abrimos con VSC el archivo ***PruebaArchivo03.java*** y lo estudiamos.
-
-```
-code ./PruebaArchivo03.java
-```
+Abrimos con VSC el archivo ***10_OperacionesFicheros/PruebaArchivo03.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 El paso de argumentos por línea de comandos es necesario si arrancamos la aplicación desde la terminal.
 
 El siguiente ejemplo lee los parámetros. Posteriormente los podríamos procesar mediante un ***switch***.
 
-Abrimos con VSC el archivo ***PruebaParametros.java*** y lo estudiamos.
-
-```
-code ./PruebaParametros.java
-```
+Abrimos con VSC el archivo ***10_OperacionesFicheros/PruebaParametros.java*** y lo estudiamos.
 
 Compilamos el programa, tendrás que poner los parámetros desde la terminal. 
 
@@ -62,18 +44,6 @@ Cuando se procesa un archivo de texto, los pasos a seguir son los siguientes:
 4. Volver al paso 1.
 
 Es recomendable usar la clase String para procesar el archivo, ya que sus métodos hacen todo lo que necesitamos. Aquí tienes su documentación: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
-
-El siguiente ejemplo abre procesa un archivo y sustituye los tabuladores por 2 espacios en blanco.
-
-
-Abrimos con VSC el archivo ***PruebaString.java*** y lo estudiamos.
-
-```
-code ./PruebaString.java
-```
-
-Compilamos el programa, pasamos el archivo original en la línea de comando de la terminal.
-
 
 [Vamos al siguiente capítulo](../11_Excepciones/_Contenido.md)
 

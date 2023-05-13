@@ -1,6 +1,5 @@
 # 09. Colecciones y Diccionarios.
 
-Asegurarse que se está en el directorio ***java_poo_jsp_mvn/09_ColeccionesDiccionarios***.
 
 Una ***colección*** en Java es una estructura de datos que permite almacenar muchos valores del mismo tipo; por tanto, conceptualmente es prácticamente igual que un array. Según el uso y según si se permiten o no repeticiones, Java dispone de un amplio
 catálogo de colecciones: ***ArrayList*** (lista), ***ArrayBlockingQueue*** (cola), ***HashSet*** (conjunto), ***Stack*** (pila), etc. 
@@ -21,21 +20,13 @@ Para cada nueva clase que vayas a usar de un framework, es muy importante que es
 
 Ahora vamos a probar la ***ArrayList***.
 
-Abrimos con VSC el archivo ***PruebaArrayList01.java*** y lo estudiamos.
-
-```
-code ./PruebaArrayList01.java
-```
+Abrimos con VSC el archivo ***09_ColeccionesDiccionarios/PruebaArrayList01.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
 Ahora usamos el método ***removeIf()***.
 
-Abrimos con VSC el archivo ***PruebaArrayList02.java*** y lo estudiamos.
-
-```
-code ./PruebaArrayList02.java
-```
+Abrimos con VSC el archivo ***09_ColeccionesDiccionarios/PruebaArrayList02.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
@@ -45,21 +36,11 @@ En el siguiente ejemplo, definimos una lista de gatos. En cada posición de la l
 
 En esta ocasión hemos modificado la clase ***Animal*** para que almacene el nombre. Observa la clase y como se ha creado un constructor nuevo que inicializa el nombre del animal.
 
-Abrimos con VSC el archivo ***Animal.java*** y lo estudiamos.
+Abrimos con VSC el archivo ***09_ColeccionesDiccionarios/ejemplo_09/Animal.java*** y lo estudiamos.
 
-```
-code ./ejemplo_09/Animal.java
-```
-
-
-Abrimos con VSC el archivo ***PruebaArrayList03.java*** y lo estudiamos.
-
-```
-code ./PruebaArrayList03.java
-```
+Abrimos con VSC el archivo ***09_ColeccionesDiccionarios/PruebaArrayList03.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 Los elementos de una ***ArrayList*** se pueden ordenar con el método ***sort()***, pero solo para los tipos primitivos (int, double, String, ...) Si queremos que se ordene un array de objetos de nuestra clase, debemos indicar a Java como queremos que se ordene.
 
@@ -67,19 +48,11 @@ Para ello, debemos indicar que la clase implementa la interfaz ***Comparable***,
 
 Podemos ordenar por lo que deseemos, por el nombre del gato, por su sexo o por su identificación. El método ***compareTo()*** debe devolver un ***0*** si los elementos a comparar son iguales. un número ***negativo*** si el primer elemento que se compara es menor que el segundo y, un número ***positivo*** en caso contrario.
 
-Abrimos con VSC el archivo ***Gato.java*** y lo estudiamos.
-
-```
-code ./ejemplo_10/Gato.java
-```
+Abrimos con VSC el archivo ***09_ColeccionesDiccionarios/ejemplo_10/Gato.java*** y lo estudiamos.
 
 Ahora solo queda probar.
 
-Abrimos con VSC el archivo ***PruebaArrayList04.java*** y lo estudiamos.
-
-```
-code ./PruebaArrayList04.java
-```
+Abrimos con VSC el archivo ***09_ColeccionesDiccionarios/PruebaArrayList04.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
@@ -93,11 +66,7 @@ La clave(key) permite acceder al valor. No puede haber claves duplicadas.
 Java dispone de varios tipos de diccionarios: ***HashMap***, ***EnumMap***, ***Hashtable***, ***IdentityHashMap***, ***LinkedHashMap***, etc. Nosotros estudiaremos el diccionario ***HashMap***. Aquí tienes la documentación de esta clase: https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
 
 
-Abrimos con VSC el archivo ***PruebaHashMap01.java*** y lo estudiamos.
-
-```
-code ./PruebaHashMap01.java
-```
+Abrimos con VSC el archivo ***09_ColeccionesDiccionarios/PruebaHashMap01.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 

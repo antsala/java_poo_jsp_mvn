@@ -1,7 +1,5 @@
 # 13. Accesos a bases de datos (JDBC)
 
-Asegurarse que se está en el directorio ***java_poo_jsp_mvn/13_MySQL_JDBC***.
-
 JDBC significa ***Java Database Connectivity*** y es una API (interfaz de programación de aplicaciones) de Java que permite a los desarrolladores conectarse a bases de datos relacionales, como ***MySQL***, ***Oracle*** o ***PostgreSQL***, desde una aplicación Java.
 
 JDBC proporciona un conjunto de clases e interfaces que permiten al programador enviar consultas SQL a una base de datos y recibir resultados de esas consultas en forma de objetos Java. Además, JDBC permite a los programadores manejar transacciones, controlar la concurrencia y realizar operaciones de administración de bases de datos, como crear o borrar tablas.
@@ -43,22 +41,13 @@ En la paleta de comandos (Ctrl + Mayús + P), buscamos: ***java: Create Java Pro
 
 Pedirá una carpeta para crear el proyecto. Pon el nombre que quieras. (Nota: En el repositorio tienes el proyecto ***Prueba_JDBC*** terminado en la carpeta ***13_MySQL_JDBC***, por si necesitas ayuda)
 
-
 Localiza en el explorador el archivo ***App.java*** que está en la carpeta ***src*** del proyecto y renómbralo a ***Crear_DB.java***
 
-Abrimos ***Prueba12.java***
+Abrimos ***13_MySQL_JDBC/Ejemplo12.java***
 
+Copia todo el texto y pégalo en el archivo ***13_MySQL_JDBC/Prueba_JDBC/src/Crear_DB.java***, descartando el contenido que éste tuviera. A continuación estúdialo.
 
-```
-code ./Prueba12.java
-```
-
-Copia todo el texto y pégalo en el archivo ***Crear_DB.java***, descartando el contenido que éste tuviera. A continuación estúdialo.
-Pon el password de tu base de datos dond ese indica y garda el archivo.
-
-```
-code ./src/Crear_DB.java
-```
+Pon el password de tu base de datos donde se indica y garda el archivo.
 
 Si lo compilas fallará. Es necesario indicar al compilador de Java dónde puede encontrar el driver JDBC para comunicarse con MySQL. 
 
@@ -67,8 +56,7 @@ Para ello, en el Explorador, localiza la sección ***Java Projects***. Despliega
 ```
 C:\Program Files (x86)\MySQL\Connector J 8.0\mysql-connector-j-8.0.33.jar
 ```
-
-Ahora ejecuta el programa y la base de datos se creará. Puedes comprobarlo en MySQL Workbench.
+Ahora ejecuta el programa y la base de datos se creará. Puedes comprobarlo en ***MySQL Workbench***.
 
 Cerramos el proyecto.
 
@@ -80,7 +68,8 @@ A continuación vamos a abrir el proyecto ***gestordb*** que está en la carpeta
 
 Maven permite indicar las dependencias del proyecto en el archivo ***pom.xml***. 
 
-Abre el archivo y localiza las líneas que inyectan la dependencia. No cambies el archivo.
+Abre el archivo ***13_MySQL_JDBC/Maven_project_06/gestordb/pom.xml*** y localiza las líneas que inyectan la dependencia. No cambies nada el archivo.
+
 ```
     <dependency>
         <groupId>mysql</groupId>
@@ -89,13 +78,9 @@ Abre el archivo y localiza las líneas que inyectan la dependencia. No cambies e
     </dependency>
 ```
 
-```
-code ./Maven_project_06/gestordb/pom.xml
-```
 
-Edita el archivo ***index.jsp***, estúdialo y actualiza el valor del password del root. 
-```
-code ./Maven_project_06/gestordb/src/main/webapp/index.jsp
-```
+Edita el archivo ***13_MySQL_JDBC/Maven_project_06/gestordb/src/main/webapp/index.jsp***, estúdialo y actualiza el valor del password del root. 
 
 Haz el deploy y comprueba que se puede leer de la base de datos.
+
+FIN.
