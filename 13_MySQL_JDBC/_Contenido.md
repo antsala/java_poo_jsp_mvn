@@ -79,67 +79,7 @@ code ./Prueba02.jsp
 Copia todo el texto y pégalo en el archivo ***index.jsp***, descartando el contenido que éste tuviera. A continuación estúdialo, compila, empaqueta y despliega tu aplicación.
 
 
-Es el momento de usar un formulario que envíe datos al servidor, para que este los procese con Java. Para ello vamos a usar un proyecto presente en el respositorio. 
-
-En el explorador, localiza la carpeta ***Maven_project_03\recogidadatosformulario***. En la carpeta ***src*** verás dos archivos: ***index.jsp*** que presenta un formulario simple, y ***procesa.jsp*** que es llamado por el submit del formulario.
-
-Vamos a abrirlos y estudiarlos.
-
-Abrimos ***index.jsp***.
-
-```
-code .\java_poo_jsp_mvn\Maven_project_03\recogidadatosformulario\src\main\webapp\index.jsp
-```
-
-Abrimos ***procesa.jsp***.
-
-```
-code .\java_poo_jsp_mvn\Maven_project_03\recogidadatosformulario\src\main\webapp\procesa.jsp
-```
-
-Despliega el proyecto y comprueba que funciona. El proceso en el servidor de los datos enviados por el formulario es algo que siempre se realizan en las aplicaciones web. 
-
-Vamos a ver como programar orientado a objetos en JSP.
-
-En las aplicaciones realizadas en JSP se pueden incluir clases definidas por el usuario para posteriormente crear objetos de esas clases. Lo habitual es que el fichero que contiene la definición de la clase se encuentre separado del programa principal.
 
 
-(Nota: Si te aparece el error ***Compiler compliance specified is 1.7 but a JRE 17 is used***, hay que "retocar un poco el archivo ***pom.xml***. Editalo y localiza estas líneas:
-
-```
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
-```
-
-Debes dejarlo así:
-```
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
-  </properties>
-```
-
-Aquí tienes el layout de carpetas que usa Maven: https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
-
-Hay que ser muy estricto a la hora de colocar los archivos con el código fuente de las clases de java. Siempre debes realizarlo así:
-Coloca el paquete (la carpeta) de tus clases en ***./src/main/java*** (si alguna carpeta no existe, créala)
-
-La clase de java debe definir el paquete al que pertenece, siguiendo las buenas prácticas que has aprendido.
-
-En definitiva, la clase ***Gato***, debe estar en la ruta que ves en el siguiente comando que usamos para visualizar el archivo
-
-```
-code .\java_poo_jsp_mvn\Maven_project_04\poojsp\src\main\java\mipaquete\Gato.java
-```
-
-Abrimos el archivo ***index.jsp***.
-
-```
-code .\java_poo_jsp_mvn\Maven_project_04\poojsp\src\main\webapp\index.jsp
-```
-
-[Vamos al siguiente capítulo](../13_MySQL_JDBC/_Contenido.md)
+[Vamos al siguiente capítulo](../14)
 
