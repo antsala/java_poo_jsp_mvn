@@ -46,6 +46,6 @@ Bloque try - catch - finally. Uso de varios bloques catch. Crear excepciones pro
 
 ## 12. Aplicaciones web en Java (JSP)
 
-Creación de JSP desde proyecto de Maven. Abre el archivo [Contenido](./12_AplicacionesWebJSP/_Contenido.md
+Creación de JSP desde proyecto de Maven. Abre el archivo [Contenido](./12_AplicacionesWebJSP/_Contenido.md)
 
 ## 13. Acceso a bases de datos (JDBC)
