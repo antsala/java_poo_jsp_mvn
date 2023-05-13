@@ -1,10 +1,16 @@
+package com.example;
+
 import java.security.PublicKey;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Crear_DB {
+/**
+ * Hello world!
+ *
+ */
+public class App {
     static final String DB_URL = "jdbc:mysql://localhost:3306";
     static final String USER = "root";
     static final String PASS = "<PON AQUÍ EL PASSWORD DE TU SERVIDOR>";

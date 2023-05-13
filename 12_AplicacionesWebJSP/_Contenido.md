@@ -104,7 +104,7 @@ Vamos a ver como programar orientado a objetos en JSP.
 En las aplicaciones realizadas en JSP se pueden incluir clases definidas por el usuario para posteriormente crear objetos de esas clases. Lo habitual es que el fichero que contiene la definición de la clase se encuentre separado del programa principal.
 
 
-(Nota: Si te aparece el error ***Compiler compliance specified is 1.7 but a JRE 17 is used***, hay que "retocar un poco el archivo ***pom.xml***. Editalo y localiza estas líneas:
+Si te aparece el error ***Compiler compliance specified is 1.7 but a JRE 17 is used***, hay que "retocar un poco el archivo ***pom.xml***. Editalo y localiza estas líneas:
 
 ```
 <properties>
@@ -140,6 +140,8 @@ Abrimos el archivo ***index.jsp***.
 ```
 code .\java_poo_jsp_mvn\Maven_project_04\poojsp\src\main\webapp\index.jsp
 ```
+
+
 
 [Vamos al siguiente capítulo](../13_MySQL_JDBC/_Contenido.md)
 
