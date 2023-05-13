@@ -1,22 +1,14 @@
 # 07. Control de Flujo.
 
 
-Asegurarse que se está en el directorio ***java_poo_jsp_mvn/07_Funciones***.
-
-
 Una función es un trozo de código que realiza una tarea muy concreta y que se puede
 incluir en cualquier programa cuando hace falta resolver esa tarea. Opcionalmente,
 las funciones aceptan una entrada (parámetros de entrada) y devuelven una salida.
 
 
-Abrimos con VSC el archivo ***NumeroPrimoConFuncion.java*** y lo estudiamos.
-
-```
-code ./NumeroPrimoConFuncion.java
-```
+Abrimos con VSC el archivo ***07_Funciones/NumeroPrimoConFuncion.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 Si la función ***esPrimo()*** va a ser usada en tres programas diferentes se puede copiar y pegar su código en cada uno de los programas, pero hay una solución mucho más elegante y práctica.
 
@@ -33,25 +25,13 @@ Nota: Los paquetes no son clases, por eso la primera letra no va en mayúscula.
 
 Otra manera de agrupar las funciones dentro de un mismo paquete consiste en crear varios ficheros dentro de un mismo directorio. En el ejemplo vamos a crear un paquete con nombre ***matematicas*** que contenga dos clases: ***Varias*** (para funciones matemáticas de propósito general) y ***Geometria***. Observa como se ha creado una carpeta con nombre ***matematicas*** que contiene los ficheros ***Varias.java*** y ***Geometria.java***.
 
-Abrimos con VSC el archivo ***Varias.java*** y lo estudiamos.
+Abrimos con VSC el archivo ***07_Funciones/matematicas/Varias.java*** y lo estudiamos.
 
-```
-code ./matematicas/Varias.java
-```
-
-Abrimos con VSC el archivo ***Geometria.java*** y lo estudiamos.
-
-```
-code ./matematicas/Geometria.java
-```
+Abrimos con VSC el archivo ***07_Funciones/matematicas/Geometria.java*** y lo estudiamos.
 
 Es el momento de que el programa principal importe las definiciones de nuestras clases.
 
-Abrimos con VSC el archivo ***Varias.java*** y lo estudiamos.
-
-```
-code ./PruebaFunciones.java
-```
+Abrimos con VSC el archivo ***07_Funciones/matematicas/Varias.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
@@ -61,11 +41,7 @@ Cuando se pasa un parámetro por valor, en realidad se pasa una copia de la vari
 misma.
 
 
-Abrimos con VSC el archivo ***PruebaParametros1.java*** y lo estudiamos.
-
-```
-code ./PruebaParametros1.java
-```
+Abrimos con VSC el archivo ***07_Funciones/PruebaParametros1.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
@@ -78,15 +54,9 @@ En Java ***no podemos*** elegir. Todos los parámetros que son de tipo ***int***
 
 Esto quiere decir que cualquier cambio que efectuemos en un array que se pasa como parámetro permanece cuando termina la ejecución de la función, por lo que hay que tener especial cuidado en estos casos.
 
-Abrimos con VSC el archivo ***PruebaParametrosArray.java*** y lo estudiamos.
-
-```
-code ./PruebaParametrosArray.java
-```
+Abrimos con VSC el archivo ***07_Funciones/PruebaParametrosArray.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
 
 [Vamos al siguiente capítulo](../08_POO/_Contenido.md)
-
-

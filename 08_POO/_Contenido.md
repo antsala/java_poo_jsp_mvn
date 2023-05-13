@@ -1,8 +1,6 @@
 # 08. Programación Orientada a Objetos.
 
 
-Asegurarse que se está en el directorio ***java_poo_jsp_mvn/08_POO***.
-
 La ***programación orientada a objetos*** es un paradigma de programación que se basa, como su nombre indica, en la utilización de objetos. Estos objetos también se suelen llamar ***instancias***.
 
 Un objeto en términos de POO no se diferencia mucho de lo que conocemos como un objeto en la vida real. Pensemos por ejemplo en un coche. Nuestro coche sería un objeto concreto de la vida real, igual que el coche del vecino, o el coche de un compañero de trabajo.
@@ -16,19 +14,11 @@ En Java, los nombres de las ***clases*** se escriben con la ***primera letra en 
 Vamos a definir a continuación la clase ***Libro*** con los atributos ***isbn***, ***autor***, ***titulo*** y ***numeroPaginas***.
 
 
-Abrimos con VSC el archivo ***Libro.java*** y lo estudiamos.
-
-```
-code ./ejemplo_01/Libro.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_01/Libro.java*** y lo estudiamos.
 
 Ahora creamos otro archivo para probar la clase.
 
-Abrimos con VSC el archivo ***PruebaLibro.java*** y lo estudiamos.
-
-```
-code ./PruebaLibro.java
-```
+Abrimos con VSC el archivo ***08_POO/PruebaLibro.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
 
@@ -42,22 +32,13 @@ Vamos a crear la clase ***GatoSimple***. Para saber qué atributos debe tener es
 
 Para saber qué ***metodos*** debemos implementar hay que preguntarse qué acciones están asociadas a los gatos. Bien, pues los gatos ***maullan***, ***ronronean***, ***comen*** y si son machos se ***pelean*** entre ellos. Esos serán los métodos que definamos en la clase.
 
-Abrimos con VSC el archivo ***GatoSimple.java*** y lo estudiamos.
-
-```
-code ./ejemplo_02/GatoSimple.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_02/GatoSimple.java*** y lo estudiamos.
 
 Vamos a probar la clase.
 
-Abrimos con VSC el archivo ***PruebaGatoSimple.java*** y lo estudiamos.
-
-```
-code ./PruebaGatoSimple.java
-```
+Abrimos con VSC el archivo ***08_POO/PruebaGatoSimple.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 Los métodos getter y setter son ampliamente utilizados en Java. Vamos a explicarlos con la clase Cubo. 
 
@@ -65,22 +46,13 @@ Para saber qué atributos se deben definir, nos preguntamos qué característica
 
 Un cubo se fabrica con el propósito de contener líquido; por tanto otra característica es la cantidad de litros de líquido que ***contiene*** en un momento determinado. Por ahora, solo nos interesa saber la ***capacidad máxima*** y los litros que ***contiene*** el cubo en cada momento, así que esos serán los atributos que tendremos en cuenta.
 
-Abrimos con VSC el archivo ***Cubo.java*** y lo estudiamos.
-
-```
-code ./ejemplo_03/Cubo.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_03/Cubo.java*** y lo estudiamos.
 
 Vamos a probar la clase.
 
-Abrimos con VSC el archivo ***PruebaCubo.java*** y lo estudiamos.
-
-```
-code ./PruebaCubo.java
-```
+Abrimos con VSC el archivo ***08_POO/PruebaCubo.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 El método ***toString()*** es muy importante implementarlo en tus clases. 
 
@@ -92,23 +64,13 @@ mostrar el objeto ***miPiramide*** que pertenece a la clase ***Piramide***, tamb
 Java sabe perfectamente cómo mostrar números y cadenas de caracteres pero no sabe a priori cómo se pintan pirámides. Para indicar a Java cómo debe pintar un objeto de la clase ***Piramide ***basta con implementar el método ***toString*** dentro de la clase.
 Veamos un ejemplo muy sencillo de implementación de toString. Definiremos la clase ***Cuadrado*** con el atributo ***lado***, el ***constructor*** y el método ***toString()***.
 
-Abrimos con VSC el archivo ***Cuadrado.java*** y lo estudiamos.
-
-```
-code ./ejemplo_04/Cuadrado.java
-```
-
+Abrimos con VSC el archivo ***08_POO/ejemplo_04/Cuadrado.java*** y lo estudiamos.
 
 Vamos a probar la clase.
 
-Abrimos con VSC el archivo ***PruebaCuadrado.java*** y lo estudiamos.
-
-```
-code ./PruebaCuadrado.java
-```
+Abrimos con VSC el archivo ***08_POO/PruebaCuadrado.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 Al definir los elementos de una clase, se pueden especificar sus ámbitos (scope) de visibilidad o accesibilidad con las palabras reservadas ***public***, ***protected*** y ***private***.
 
@@ -136,35 +98,19 @@ Empezamos a crear las clases.
 Antes de ello vamos a definir una enumeración o tipo enumerado. De esta forma un atributo solo podrá tener uno de los posibles valores que se dan como opción. Los valores que se especifican en el tipo enumerado se suelen escribir con todas
 las letras en mayúscula.
 
-Abrimos con VSC el archivo ***Sexo.java*** y lo estudiamos.
-
-```
-code ./ejemplo_05/Sexo.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_05/Sexo.java*** y lo estudiamos.
 
 Creamos la clase ***Animal***.
 
-Abrimos con VSC el archivo ***Animal.java*** y lo estudiamos.
-
-```
-code ./ejemplo_05/Animal.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_05/Animal.java*** y lo estudiamos.
 
 Ahora creamos la clase ***Gato*** que va a extender a ***Animal***.
 
-Abrimos con VSC el archivo ***Gato.java*** y lo estudiamos.
-
-```
-code ./ejemplo_05/Gato.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_05/Gato.java*** y lo estudiamos.
 
 Creamos clase ***Ave***, que especializa a ***Animal***.
 
-Abrimos con VSC el archivo ***Ave.java*** y lo estudiamos.
-
-```
-code ./ejemplo_05/Ave.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_05/Ave.java*** y lo estudiamos.
 
 Un método se puede ***redefinir*** (volver a definir con el mismo nombre) en una ***subclase***. Por ejemplo, el método ***vuela*** que está definido en la clase ***Ave*** se vuelve a definir en la clase ***Pinguino***. En estos casos, indicaremos nuestra intención de sobreescribir un método mediante la etiqueta ***@Override***.
 
@@ -172,22 +118,13 @@ Si no escribimos esta etiqueta, la sobreescritura del método se realizará de t
 
 Vamos a crear la clase ***Pinguino***.
 
-Abrimos con VSC el archivo ***Pinguino.java*** y lo estudiamos.
-
-```
-code ./ejemplo_05/Pinguino.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_05/Pinguino.java*** y lo estudiamos.
 
 Es el momento de probar todas estas clases.
 
-Abrimos con VSC el archivo ***PruebaAnimal.java*** y lo estudiamos.
-
-```
-code ./PruebaAnimal.java
-```
+Abrimos con VSC el archivo ***08_POO/PruebaAnimal.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 Hasta el momento hemos definido ***atributos de instancia*** como raza, sexo o color y ***métodos de instancia*** como maulla, come o vuela. De tal modo que si en el programa se crean 20 gatos, cada uno de ellos tiene su propia raza y puede haber potencialmente
 20 razas diferentes. También podría aplicar el método ***maulla*** a todos y cada uno de esos 20 gatos.
@@ -200,20 +137,11 @@ kilómetros que va recorriendo, en la variable de clase kilometrajeTotal se llev
 También se crea un método de clase llamado ***getKilometrajeTotal*** que simplemente es un getter para la variable de clase kilometrajeTotal.
 
 
-Abrimos con VSC el archivo ***Coche.java*** y lo estudiamos.
+Abrimos con VSC el archivo ***08_POO/ejemplo_06\Coche.java*** y lo estudiamos.
 
-```
-code ./ejemplo_06/Coche.java
-```
-
-Abrimos con VSC el archivo ***PruebaCoche.java*** y lo estudiamos.
-
-```
-code ./PruebaCoche.java
-```
+Abrimos con VSC el archivo ***08_POO/PruebaCoche.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 Una ***interfaz*** contiene únicamente la cabecera de una serie de métodos (opcionalmente también puede contener constantes). Por tanto se encarga de especificar un comportamiento que luego tendrá que ser implementado. 
 
@@ -231,59 +159,33 @@ En el ejemplo empezamos de nuevo y solo definimos la clase ***Animal*** y la enu
 
 Definimos la interfaz Mascota.
 
-Abrimos con VSC el archivo ***Mascota.java*** y lo estudiamos.
-
-```
-code ./ejemplo_07/Mascota.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_07/Mascota.java*** y lo estudiamos.
 
 Ahora volvemos a crear la clase ***Gato***, pero esta vez indicamos que tiene que implementar los métodos que exige la interfaz ***Mascota***.
 
-Abrimos con VSC el archivo ***Gato.java*** y lo estudiamos.
-
-```
-code ./ejemplo_07/Gato.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_07/Gato.java*** y lo estudiamos.
 
 Vamos a crear otra clase que también implementa la inferfaz ***Mascota***. La clase ***Perro***.
 
-Abrimos con VSC el archivo ***Perro.java*** y lo estudiamos.
-
-```
-code ./ejemplo_07/Perro.java
-```
+Abrimos con VSC el archivo ***08_POO/ejemplo_07/Perro.java*** y lo estudiamos.
 
 Probamos la clase.
 
-Abrimos con VSC el archivo ***PruebaMascota.java*** y lo estudiamos.
-
-```
-code ./PruebaMascota.java
-```
+Abrimos con VSC el archivo ***08_POO/PruebaMascota.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 Del mismo modo que se pueden crear arrays de números enteros, decimales o cadenas de caracteres, también es posible crear arrays de objetos.
 
 Vamos a definir la clase ***Alumno*** para luego crear un array de objetos de esta clase.
 
-Abrimos con VSC el archivo ***Alumno.java*** y lo estudiamos.
-
-```
-code ./ejemplo_08/Alumno.java
-```
+Abrimos con VSC el archivo ***08_POO\/jemplo_08/Alumno.java*** y lo estudiamos.
 
 Vamos a hacer una prueba instanciando un array con 5 objetos de tipo Alumno.
 
-Abrimos con VSC el archivo ***PruebaArrayAlumno.java*** y lo estudiamos.
-
-```
-code ./PruebaArrayAlumno.java
-```
+Abrimos con VSC el archivo ***08_POO/PruebaArrayAlumno.java*** y lo estudiamos.
 
 Compilamos el programa y observamos la salida en la terminal.
-
 
 [Vamos al siguiente capítulo](../09_ColeccionesDiccionarios/_Contenido.md)
 
