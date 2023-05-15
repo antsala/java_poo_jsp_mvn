@@ -6,6 +6,7 @@ public class MenuConSwitch {
         System.out.println(" 2. Rectángulo");
         System.out.println(" 3. Triángulo");
         System.out.print("\n Elija una opción (1-3): ");
+
         int opcion = Integer.parseInt(System.console().readLine());
         double lado;
         double base;

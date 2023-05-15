@@ -1,4 +1,4 @@
-# 07. Control de Flujo.
+# 07. Funciones.
 
 
 Una función es un trozo de código que realiza una tarea muy concreta y que se puede

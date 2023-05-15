@@ -9,6 +9,7 @@ public class ArrayForEach {
         }
         System.out.println("Tus notas son: ");
         double suma = 0;
+
         for (double n : nota) { // for al estilo foreach
             System.out.print(n + " ");
             suma += n;
