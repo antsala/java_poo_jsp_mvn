@@ -1,13 +1,19 @@
+import java.util.Scanner;
+
 public class NumeroPrimoConFuncion {
     // Programa principal //////////////////////////////////////
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Introduzca un número entero positivo: ");
-        int n = Integer.parseInt(System.console().readLine());
+        int n = Integer.parseInt(scanner.nextLine());
         if (esPrimo(n)) {
             System.out.println("El " + n + " es primo.");
         } else {
             System.out.println("El " + n + " no es primo.");
         }
+
+        scanner.close();
     }
 
     // Funciones ///////////////////////////////////////////////

@@ -1,7 +1,10 @@
+import java.util.Scanner;
 import ejemplo_08.Alumno;
 
 public class PruebaArrayAlumno {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         // IMPORTANTE. Definimos la estructura, un array de 5 alumnos pero no se crean
         // los objetos.
         Alumno[] alum = new Alumno[5];
@@ -17,10 +20,10 @@ public class PruebaArrayAlumno {
 
             System.out.println("Alumno " + i);
             System.out.print("Nombre: ");
-            nombreIntroducido = System.console().readLine();
+            nombreIntroducido = scanner.nextLine();
             alum[i].setNombre(nombreIntroducido);
             System.out.print("Nota media: ");
-            notaIntroducida = Double.parseDouble(System.console().readLine());
+            notaIntroducida = Double.parseDouble(scanner.nextLine());
             alum[i].setNotaMedia(notaIntroducida);
         } // for i
           // Muestra los datos de los alumnos /////////////////////////////////
@@ -34,5 +37,7 @@ public class PruebaArrayAlumno {
             sumaDeMedias += alum[i].getNotaMedia();
         } // for i
         System.out.println("La media global de la clase es " + sumaDeMedias / 5);
+
+        scanner.close();
     }
 }

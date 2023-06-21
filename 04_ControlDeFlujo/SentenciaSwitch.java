@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class SentenciaSwitch {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Por favor, introduzca un numero de mes: ");
-        int mes = Integer.parseInt(System.console().readLine());
+        int mes = Integer.parseInt(scanner.nextLine());
         String nombreDelMes;
         switch (mes) {
             case 1:
@@ -44,5 +48,7 @@ public class SentenciaSwitch {
                 nombreDelMes = "no existe ese mes"; // No es necesario poner "break" aquí.
         }
         System.out.println("Mes " + mes + ": " + nombreDelMes);
+
+        scanner.close();
     }
 }
