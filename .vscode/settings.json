@@ -1,6 +1,10 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.project.sourcePaths": [
-        "13_MySQL_JDBC/PruebaJDBC"
+        "Soluciones ejercicios/04_MezclaArrays",
+        "Soluciones ejercicios/03_ConcatenaArrays",
+        "Soluciones ejercicios/02_Filtra números",
+        "Soluciones ejercicios/01_Biblioteca arrays bidimensionales",
+        "Soluciones ejercicios/05_POO_Vehiculos"
     ]
 }
