@@ -45,5 +45,20 @@ Iniciamos la consola web de H2 con el siguiente comando.
 java -jar h2-2.1.214.jar
 ```
 
+El navegador abrirá la consola web de H2. Observa como se va a conectar a una base de datos llamada ***test*** (En el directorio por defecto del usuario). Debes poner una contraseña para acceder de aquí en adelante. Te recomiendo poner ***Pa55w.rd***.
+
+![Consola web](../img/202306281213.png)
+
+Ma minimizamos para usarla en breve.
+
+Se abrirá la consola de administración de H2.
+
+![Consola web](../img/202306281219.png)
+
+Vamos a proceder a crear una pequeña tabla. Para ello, en el campo ***SQL statement***, pegamos el siguiente comando.
+
+```
+create table alumnos (ID int primary key auto_increment, name varchar(48))
+```
 
 
