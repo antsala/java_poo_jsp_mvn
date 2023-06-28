@@ -167,6 +167,24 @@ public class PruebaH2 {
 }
 ```
 
+Muy importante: Si tienes la base de datos abierta con la consola web, al ejecutar el programa te dará un error porque el archivo está bloqueado. 
+
+![error](../img/202306281350.png)
+
+Asegurate que has cerrado la ventana de la consola web de H2 con ***CTRL+C*** antes de continuar.
+
+![CTRL+C](../img/202306281353.png)
+
+Al ejecutar tu programa Java, debe aparecer el mensaje de conexión correcta.
+
+![OK](../img/202306281354.png)
+
+
+## 5. Realizar operaciones CRUD a través de JDBC con la base de datos H2.
+
+
+
+
 
 
 
