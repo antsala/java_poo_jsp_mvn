@@ -21,11 +21,29 @@ Debemos descargar la versión comprimida, que es multiplataforma.
 
 ![Descarga zip](../img/202306281153.png)
 
-Descomprímela y mueve la carpeta descomprimida a la ruta ***C:\Archivos de programa***. Luego localiza el ejecutable (archivo jar) de H2, como muestra la imagen.
+Descomprímela y mueve la carpeta descomprimida a la ruta ***C:\Archivos de programa\Java***. Luego localiza el ejecutable (archivo jar) de H2, como muestra la imagen.
 (Nota: La versión de H2 descargada puede ser diferente)
 
 ![Ruta](../img/202306281201.png)
 
+## 03. Usar la consola web de H2.
+
+Para poder acceder a la consola web  de H2 y gestionar las bases de datos SQL debemos iniciarla.
+
+Para ello, abrimos una consola de comandos, y cambiamos al directorio donde hemos descargado el jar de H2.
+(Nota: la ruta puede ser diferente. Es mejor usar el Explorador de archivos y copiar el path a la carpeta ***bin***)
+
+```
+cd "C:\Program Files\Java\h2-2022-06-13\h2\bin"
+```
+
+
+Iniciamos la consola web de H2 con el siguiente comando.
+(Nota: En nombre del archivo jar puede ser de una version diferente)
+
+```
+java -jar h2-2.1.214.jar
+```
 
 
 
