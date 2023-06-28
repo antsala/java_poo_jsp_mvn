@@ -182,6 +182,154 @@ Al ejecutar tu programa Java, debe aparecer el mensaje de conexión correcta.
 
 ## 5. Realizar operaciones CRUD a través de JDBC con la base de datos H2.
 
+En esta última parte vamos a ver cómo se realizan las operaciones CRUD (Create, Read, Update y Delete) en la base de datos usando JDBC.
+
+Para ello, sustituye todo el contenido del archivo ***PruebaH2.java*** por el que se muestra a continuación.
+
+```
+import java.sql.Connection;     // Clase para poder interactuar con la base de datos.
+import java.sql.DriverManager;  // Clase para poder conectar con la base de datos.
+import java.sql.SQLException;   // Clase para controlar los errores de SQL.
+import java.sql.Statement;      // Clase para preparar las sentencias SQL.
+import java.sql.ResultSet;      // Clase para consultas de selección.
+
+
+public class PruebaH2 {
+    public static void main(String[] args) {
+	    String jdbcURL = "jdbc:h2:~/test";  // Esta es la ruta de la base de datos "test" que creamos antes.
+        String user = "sa";                 // Nombre de usuario administrador de H2.
+        String password = "Pa55w.rd";       // Contraseña.
+		
+        // Siempre usamos control de excepciones al conectar con la base de datos.
+        try {
+            // Instancio un objeto de Connection y conecto con la base de datos H2.
+            Connection connection = DriverManager.getConnection(jdbcURL, user, password);
+			
+            // Si no hay errores, indico que la conexión es correcta.
+            System.out.println("Conexión realizada con éxito");
+			
+            
+            // Leo la tabla alumnos.
+            leeAlumnos(connection);
+            
+            // Añado un alumno
+            añadeAlumno(connection, 6, "Amanda", "Da Pena");
+            
+            // Leo la tabla alumnos.
+            leeAlumnos(connection);       
+            
+            // Elimino alumno.
+            eliminaAlumno(connection, 6);
+            
+            // Leo la tabla alumnos.
+            leeAlumnos(connection);
+            
+            // Actualizo los apellidos de un alumnno.
+            actualizaApellidosAlumno(connection, 3, "Menta Fuerte");
+            
+            // Leo la tabla alumnos.
+            leeAlumnos(connection);
+            
+            // Cierro conexión con BD.
+            connection.close();
+			
+        // Si hay errores, lo caza SQLException
+        } catch(SQLException e) {
+            System.out.println("Se ha producido un error de SQL El error es: ");
+            e.printStackTrace();
+        }
+    }
+    
+    public static void leeAlumnos(Connection connection) throws SQLException {
+    	// Creo objeto Statement para preparar la consulta.
+        Statement statement = connection.createStatement();
+        
+        // Instrucción de selección.
+        String sql = "select * from alumnos";
+        
+        // Instancio Resulset para leer los registros.
+        ResultSet resultSet = statement.executeQuery(sql);
+        
+        // Inicializo la cuentas de registros del resultSet.
+        int totalRecords = 0;
+        
+        // Itero el resultSet.
+        while (resultSet.next()) {
+            // Incremento el contador de registros.
+        	totalRecords++;
+        	
+        	// Leo la columna 'ID', que es de tipo entero.
+        	int id = resultSet.getInt("id");
+        	
+        	// Leo la columna 'Nombre', que es un varchar.
+        	String nombre = resultSet.getString("Nombre");
+
+        	// Leo la columna 'Apellidos', que es un varchar.
+        	String apellidos = resultSet.getString("Apellidos");
+        	
+        	// Imprimo registro.
+        	System.out.println("Alumno #" + id + ": " + nombre + " " + apellidos);
+        }
+        
+    	System.out.println("Total alumnos: " + totalRecords);	
+    }
+    
+    
+    public static void añadeAlumno(Connection connection, 
+    		                        int id, 
+    		                        String nombre, 
+    		                        String apellidos) throws SQLException {
+    	
+    	// Creo objeto Statement para preparar la consulta.
+        Statement statement = connection.createStatement();
+        
+        String sql = "insert into alumnos values (" + id + "," + "'" + nombre + "'" + "," + "'" + apellidos + "')";
+		
+        // Ejecuto operación.
+        int affectedRows = statement.executeUpdate(sql);
+        
+        // Comprobación.
+        if (affectedRows > 0) {
+        	System.out.println("Se ha eliminado un registro.");
+        }
+    }
+    
+    public static void eliminaAlumno(Connection connection, int id) throws SQLException {
+
+        // Creo objeto Statement para preparar la consulta.
+        Statement statement = connection.createStatement();
+
+        String sql = "delete from Alumnos where id=" + id;
+
+        // Ejecuto operación.
+        int affectedRows = statement.executeUpdate(sql);
+
+        // Comprobación.
+        if (affectedRows > 0) {
+            System.out.println("Se ha insertado un registro.");
+        }
+    }
+    
+    public static void actualizaApellidosAlumno(Connection connection, 
+    		                                    int id, 
+    		                                    String apellidos) throws SQLException {
+
+        // Creo objeto Statement para preparar la consulta.
+        Statement statement = connection.createStatement();
+
+        String sql = "update Alumnos set apellidos=" + "'" + apellidos + "' where id=" + id;
+
+        // Ejecuto operación.
+        int affectedRows = statement.executeUpdate(sql);
+
+        // Comprobación.
+        if (affectedRows > 0) {
+            System.out.println("Se ha actualizado un registro.");
+        }
+    }
+}
+```
+
 
 
 
