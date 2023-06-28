@@ -1,5 +1,8 @@
 # Acceso a base de datos H2 con Maven.
 
+Nota importante. Si se ha realizado esta práctica anteriormente, en el directorio del usuario ***C:\Users\antonio***, aparecerá un archivo llamado ***test.mv.db*** y otro llamado ***test.trace.db***. Borrar ambos archivos.
+
+
 ## 01. ¿Qué es una base de datos H2?
 
 Es un motor de base de datos SQL escrito en Java. Sus características más importantes son:
