@@ -120,9 +120,54 @@ Ahora debes copiar la dependencia y pegarla al final del archivo ***pom.xml***. 
 
 La etiqueta ***/project***, señalada en color amarillo, la hemos desplazado hacia abajo para ganar espacio dentro del arcrivo ***pom.xml***.
 
-Hemos creado una sección nueva, con las etiquetas de color azul ***dependencies*** y ***/dependencies***. También hemos dejado un hueco de unas cuantas líneas.
+debes creaar una sección nueva, escribiendo las etiquetas de color azul ***dependencies*** y ***/dependencies***. También deja un hueco de unas cuantas líneas.
 
 Pues bien, como en el portapapeles debes tener aún almacenada la dependencia de H2, lo único que debes hacer ahora es pegarla, en la imagen anterior puedes ver el resultado en el recuadro de color rojo.
+
+Cuando hayas terminado,verás como el proyecto registra la dependencia de Maven que hemos registrado.
+
+![depen](../img/202306281325.png)
+
+
+Ahora vamos a proceder a crear una nueva clase de Java para verlo todo funcionando.
+
+Crear una clase nueva y configúrala como ves en la siguiente imagen. Haz clic en ***Finish***
+
+![Nueva clase](../img/202306281329.png)
+
+Es el momento de realizar la primera prueba. Sustituye todo el contenido del archivo ***PruebaH2.java*** por el siguiente.
+
+```
+import java.sql.Connection;		// Calse para poder interactuar con la base de datos.
+import java.sql.DriverManager;	// Clase para poder conectar con la base de datos.
+import java.sql.SQLException;	// Clase para controlar los errores de SQL.
+
+public class PruebaH2 {
+
+	public static void main(String[] args) {
+		String jdbcURL = "jdbc:h2:~/test";	// Esta es la ruta de la base de datos "test" que creamos antes.
+		String user = "sa";					// Nombre de usuario administrador de H2.
+		String password = "Pa55w.rd";		// Contraseña.
+		
+		// Siempre usamos control de excepciones al conectar con la base de datos.
+		try {
+			// Instancio un objeto de Connection y conecto con la base de datos H2.
+			Connection connection = DriverManager.getConnection(jdbcURL, user, password);
+			
+			// Si no hay errores, indico que la conexión es correcta.
+			System.out.println("Conexión realizada con éxito");
+			
+		// Si hay errores, lo caza SQLException
+		} catch(SQLException e) {
+			System.out.println("Se ha producido un error al conectar con H2. El error es: ");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+
+
 
 
 
