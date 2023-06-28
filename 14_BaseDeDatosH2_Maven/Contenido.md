@@ -4,11 +4,11 @@
 
 Es un motor de base de datos SQL escrito en Java. Sus características más importantes son:
 
-* * Es Open Source, muy rápido y compatible con la API JDBC.
-* * Tiene la capacidad de crear BBDD en memoria, por lo que es muy apropiado para entornos de formación o PoC.
-* * Dispone de una consola de administración con interfaz web.
-* * Ocupa muy poco. El archivo ***jar*** ocupa alrededor de 2.5 MB.
-* * Puede ser incrustado en las aplicaciones Java.
+* *Es Open Source, muy rápido y compatible con la API JDBC.
+* *Tiene la capacidad de crear BBDD en memoria, por lo que es muy apropiado para entornos de formación o PoC.
+* *Dispone de una consola de administración con interfaz web.
+* *Ocupa muy poco. El archivo ***jar*** ocupa alrededor de 2.5 MB.
+* *Puede ser incrustado en las aplicaciones Java.
 
 ## 02. Descarga de H2.
 
