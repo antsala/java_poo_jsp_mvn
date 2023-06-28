@@ -138,31 +138,32 @@ Crear una clase nueva y configúrala como ves en la siguiente imagen. Haz clic e
 Es el momento de realizar la primera prueba. Sustituye todo el contenido del archivo ***PruebaH2.java*** por el siguiente.
 
 ```
-import java.sql.Connection;		// Calse para poder interactuar con la base de datos.
-import java.sql.DriverManager;	// Clase para poder conectar con la base de datos.
-import java.sql.SQLException;	// Clase para controlar los errores de SQL.
+import java.sql.Connection;     // Clase para poder interactuar con la base de datos.
+import java.sql.DriverManager;  // Clase para poder conectar con la base de datos.
+import java.sql.SQLException;   // Clase para controlar los errores de SQL.
 
 public class PruebaH2 {
-
-	public static void main(String[] args) {
-		String jdbcURL = "jdbc:h2:~/test";	// Esta es la ruta de la base de datos "test" que creamos antes.
-		String user = "sa";					// Nombre de usuario administrador de H2.
-		String password = "Pa55w.rd";		// Contraseña.
+    public static void main(String[] args) {
+        String jdbcURL = "jdbc:h2:~/test";  // Esta es la ruta de la base de datos "test" que creamos antes.
+        String user = "sa";                 // Nombre de usuario administrador de H2.
+        String password = "Pa55w.rd";       // Contraseña.
 		
-		// Siempre usamos control de excepciones al conectar con la base de datos.
-		try {
-			// Instancio un objeto de Connection y conecto con la base de datos H2.
-			Connection connection = DriverManager.getConnection(jdbcURL, user, password);
+        // Siempre usamos control de excepciones al conectar con la base de datos.
+        try {
+            // Instancio un objeto de Connection y conecto con la base de datos H2.
+            Connection connection = DriverManager.getConnection(jdbcURL, user, password);
 			
-			// Si no hay errores, indico que la conexión es correcta.
-			System.out.println("Conexión realizada con éxito");
+            // Si no hay errores, indico que la conexión es correcta.
+            System.out.println("Conexión realizada con éxito");
 			
-		// Si hay errores, lo caza SQLException
-		} catch(SQLException e) {
-			System.out.println("Se ha producido un error al conectar con H2. El error es: ");
-			e.printStackTrace();
-		}
-	}
+        // Si hay errores, lo caza SQLException
+        } catch(SQLException e) {
+            System.out.println("Se ha producido un error al conectar con H2. El error es: ");
+            
+            // Imprimo el volcado de pila.
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
