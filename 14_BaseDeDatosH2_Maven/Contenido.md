@@ -256,22 +256,22 @@ public class PruebaH2 {
         // Itero el resultSet.
         while (resultSet.next()) {
             // Incremento el contador de registros.
-        	totalRecords++;
+            totalRecords++;
         	
-        	// Leo la columna 'ID', que es de tipo entero.
-        	int id = resultSet.getInt("id");
+            // Leo la columna 'ID', que es de tipo entero.
+            int id = resultSet.getInt("id");
         	
-        	// Leo la columna 'Nombre', que es un varchar.
-        	String nombre = resultSet.getString("Nombre");
+            // Leo la columna 'Nombre', que es un varchar.
+            String nombre = resultSet.getString("Nombre");
 
-        	// Leo la columna 'Apellidos', que es un varchar.
-        	String apellidos = resultSet.getString("Apellidos");
+            // Leo la columna 'Apellidos', que es un varchar.
+            String apellidos = resultSet.getString("Apellidos");
         	
-        	// Imprimo registro.
-        	System.out.println("Alumno #" + id + ": " + nombre + " " + apellidos);
+            // Imprimo registro.
+            System.out.println("Alumno #" + id + ": " + nombre + " " + apellidos);
         }
         
-    	System.out.println("Total alumnos: " + totalRecords);	
+        System.out.println("Total alumnos: " + totalRecords);	
     }
     
     
