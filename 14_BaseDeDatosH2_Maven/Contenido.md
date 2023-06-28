@@ -58,7 +58,33 @@ Se abrirá la consola de administración de H2.
 Vamos a proceder a crear una pequeña tabla. Para ello, en el campo ***SQL statement***, pegamos el siguiente comando.
 
 ```
-create table alumnos (ID int primary key auto_increment, name varchar(48))
+create table alumnos (ID int primary key, Nombre varchar(48), Apellidos varchar(48));
 ```
+
+Haz clic en el botón ***Ejecutar***.
+
+Como podrás comprobar, se ha creado la tabla con sus tres columnas.
+
+![Create table](../img/202306281239.png)
+
+Prueba a dar de alta un par de alumnos. Para ello puedes ejecutar el siguiente código SQL.
+
+```
+insert into alumnos values (1, 'Jaime', 'Tralleta');
+insert into alumnos values (2, 'Andrés', 'Trozado');
+insert into alumnos values (3, 'Aitor', 'Menta');
+insert into alumnos values (4, 'Dolores', 'Fuertes de Barriga');
+```
+
+Comprueba que los registros se han añadido.
+
+```
+select * from alumnos;
+```
+
+![Resultado inser](../img/202306281243.png)
+
+
+
 
 
