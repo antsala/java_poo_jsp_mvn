@@ -118,9 +118,9 @@ Ahora debes copiar la dependencia y pegarla al final del archivo ***pom.xml***. 
 
 ![H2 Dependency](../img/202306281320.png)
 
-La etiqueta ***</project>***, señalada en color amarillo, la hemos desplazado hacia abajo para ganar espacio dentro del arcrivo ***pom.xml***.
+La etiqueta ***/project***, señalada en color amarillo, la hemos desplazado hacia abajo para ganar espacio dentro del arcrivo ***pom.xml***.
 
-Hemos creado una sección nueva, con las etiquetas de color azul ***<dependencies>*** y ***</dependencies>***. También hemos dejado un hueco de unas cuantas líneas.
+Hemos creado una sección nueva, con las etiquetas de color azul ***dependencies*** y ***/dependencies***. También hemos dejado un hueco de unas cuantas líneas.
 
 Pues bien, como en el portapapeles debes tener aún almacenada la dependencia de H2, lo único que debes hacer ahora es pegarla, en la imagen anterior puedes ver el resultado en el recuadro de color rojo.
 
