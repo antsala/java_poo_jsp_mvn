@@ -82,7 +82,24 @@ Comprueba que los registros se han añadido.
 select * from alumnos;
 ```
 
-![Resultado inser](../img/202306281243.png)
+![Resultado insert](../img/202306281243.png)
+
+## 4. Conectar con una base de datos H2 usando Maven.
+
+En primer lugar, en Eclipse creamos un nuevo ***Proyecto de Maven***. 
+
+![Nuevo proyecto Maven](../img/202306281258.png)
+
+En la ventana ***New Maven Project***, nos aseguramos de marcar el check box ***Create a simple project (skip archetype selection)*** y hacemos clic en ***Next***.
+
+![Next](../img/202306281302.png)
+
+En la ventana de configuración del proyecto Maven, rellenamos los campos tal y como se muestran en la siguiente imagen. A continuación hacemos clic en ***Next***.
+
+![Next](../img/202306281306.png)
+
+
+
 
 
 
