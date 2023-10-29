@@ -46,13 +46,15 @@ Bloque try - catch - finally. Uso de varios bloques catch. Crear excepciones pro
 
 ## 12. Aplicaciones web en Java (JSP)
 
-Creación de JSP desde proyecto de Maven. Abre el archivo [Contenido](./14_BaseDeDatosH2_Maven/Contenido.md)
+Creación de JSP desde proyecto de Maven. Abre el archivo [Contenido](./12_AplicacionesWebJSP/_Contenido.md)
 
 ## 13. Acceso a bases de datos (JDBC)
 
+Acceso a base de Datos MySQL. Abre el archivo [Contenido](./13_MySQL_JDBC/_Contenido.md)
+
 ## 14. Acceso a bases de datos H2 con Maven.
 
-Configuración de una base de datos H2 en Maven y ejemplos de operaciones CRUD [Contenido](./20_Ejercicios_Resueltos/00_Enunciados.md)
+Configuración de una base de datos H2 en Maven y ejemplos de operaciones CRUD [Contenido](./14_BaseDeDatosH2_Maven/Contenido.md)
 
 ## 20. Ejercicios resueltos.
 

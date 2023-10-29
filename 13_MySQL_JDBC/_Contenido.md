@@ -83,4 +83,4 @@ Edita el archivo ***13_MySQL_JDBC/Maven_project_06/gestordb/src/main/webapp/inde
 
 Haz el deploy y comprueba que se puede leer de la base de datos.
 
-FIN.
+[Vamos al siguiente capítulo](../14_BaseDeDatosH2_Maven/Contenido.md)
